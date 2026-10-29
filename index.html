@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Untuk Princess Hylu Tercinta Dari Kebo Kesayangannya 👑❤️🐮</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Canvas Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- Floating Hearts Background -->
+  <div class="heart-bg" id="heartBg"></div>
+
+  <!-- Audio Controls / Music Toggle -->
+  <button id="musicToggle" class="music-btn" title="Nyalakan/Matikan Musik Romantis">
+    <span id="musicIcon">🎵</span>
+  </button>
+
+  <!-- Audio Element untuk File MP3 Sendiri -->
+  <audio id="bgMusic" loop preload="auto"></audio>
+
+  <main class="main-container">
+
+    <!-- PROGRESS BAR (Indikator Perjalanan Cinta) -->
+    <header class="progress-container" id="progressContainer">
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="progress-info">
+        <span id="stepBadge" class="step-badge">1 / 8</span>
+        <span class="heart-indicator">👑💖🐮</span>
+      </div>
+    </header>
+
+    <!-- ========================================================
+         TAHAP 1: AMPLUP SURAT RAHASIA
+    ======================================================== -->
+    <section class="card step-card active" id="step1">
+      <div class="envelope-wrapper" id="envelopeWrapper">
+        <div class="envelope" id="envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-pocket"></div>
+          <div class="envelope-letter">
+            <p class="letter-preview">Pesan Khusus Untukmu... 💌</p>
+          </div>
+          <div class="heart-seal">👑</div>
+        </div>
+      </div>
+      <h2 class="title">Untuk Tuan Putriku, <span class="highlight-name crush-name">PRINCESS HYLU</span> 👑</h2>
+      <p class="subtitle">
+        Ada rasa yang sering kali tak cukup diungkapkan hanya lewat kata, namun selalu hidup dan berdenyut di setiap detik detak jantungku. Buka amplop ini dan nikmati setiap rangkaian rasa yang kutulis khusus untukmu ya...
+      </p>
+      <button class="primary-btn pulse" id="btnOpenLetter">
+        <span>Buka Lembaran Pertama</span> 💌
+      </button>
+    </section>
+
+    <!-- ========================================================
+         TAHAP 2: KISAH PERTEMUAN KITA (THE STORY)
+    ======================================================== -->
+    <section class="card step-card" id="step2">
+      <div class="badge">Takdir Pertemuan 🌸</div>
+      <div class="illustration-box">
+        <span class="floating-emoji">👑</span>
+        <span class="floating-emoji center">💫</span>
+        <span class="floating-emoji">✨</span>
+      </div>
+      <h2 class="title">Saat Kamu Hadir di Hidupku</h2>
+      <p class="poetic-text">
+        "Dulu, hari-hariku hanyalah repetisi waktu yang berjalan biasa tanpa banyak arti. Sampai akhirnya semesta yang begitu baik mempertemukanku dengan senyuman dan kehangatanmu.<br><br>
+        Sejak detik itu, duniaku berubah menjadi tempat yang penuh warna, tawa, dan rasa syukur. Kehadiranmu bukan cuma membahagiakanku, tapi membuatku selalu merasa menjadi orang yang paling beruntung di dunia."
+      </p>
+      <div class="nav-buttons">
+        <button class="secondary-btn btn-prev">Kembali</button>
+        <button class="primary-btn btn-next">Lanjutkan Perjalanan ✨</button>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         TAHAP 3: ALASAN MENGAPA AKU SELALU JATUH CINTA
+    ======================================================== -->
+    <section class="card step-card" id="step3">
+      <div class="badge">Ruang Rasa ✨</div>
+      <h2 class="title">Mengapa Hatiku Selalu Tertuju Padamu</h2>
+      <p class="subtitle mini">Setiap sudut dari dirimu selalu punya cara untuk membuatku terpikat:</p>
+
+      <div class="reason-grid">
+        <div class="reason-card">
+          <div class="card-icon">👑</div>
+          <h4>Pesona & Senyumanmu</h4>
+          <p>Senyuman manismu dan binar tatapan matamu selalu punya sihir tersendiri untuk meluluhkan hatiku dan melenyapkan segala gelisah.</p>
+        </div>
+
+        <div class="reason-card">
+          <div class="card-icon">🤍</div>
+          <h4>Ketulusan Hatimu</h4>
+          <p>Perhatian kecil, kelembutan, serta caramu yang tulus menyayangiku adalah anugerah paling berharga yang selalu kusyukuri setiap hari.</p>
+        </div>
+
+        <div class="reason-card">
+          <div class="card-icon">🏡</div>
+          <h4>Rumah Ternyaman</h4>
+          <p>Bersamamu, aku bisa menjadi diriku yang seutuhnya tanpa kepalsuan. Di dekatmu selalu terasa seperti pulang ke tempat paling damai.</p>
+        </div>
+
+        <div class="reason-card">
+          <div class="card-icon">🌸</div>
+          <h4>Penyemangat Jiwaku</h4>
+          <p>Hanya dengan mendengar suaramu atau membaca pesan manismu, semua rasa lelah dan penatku seketika luntur berganti semangat baru.</p>
+        </div>
+      </div>
+
+      <div class="nav-buttons mt-16">
+        <button class="secondary-btn btn-prev">Kembali</button>
+        <button class="primary-btn btn-next">Lanjutkan ✨</button>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         TAHAP 4: RUANG TEDUH UNTUK PRINCESS HYLU (MOOD BOOSTER)
+    ======================================================== -->
+    <section class="card step-card" id="step4">
+      <div class="badge">Ruang Teduhmu 🌿💖</div>
+      <h2 class="title">Tempatmu Pulang di Segala Suasana</h2>
+      <p class="subtitle mini">Kapan pun hatimu butuh ketenangan, pilihlah apa yang sedang kamu rasakan saat ini:</p>
+
+      <div class="pill-tabs">
+        <button class="pill-tab active" data-pill="tired">🌧️ Lelah</button>
+        <button class="pill-tab" data-pill="miss">💭 Rindu</button>
+        <button class="pill-tab" data-pill="doubt">🥺 Ragu/Gelisah</button>
+        <button class="pill-tab" data-pill="happy">☀️ Bahagia</button>
+      </div>
+
+      <div class="booster-display" id="boosterDisplay">
+        <div class="booster-icon" id="boosterIcon">🌧️</div>
+        <h4 id="boosterTitle">Saat Harimu Terasa Melelahkan</h4>
+        <p id="boosterDesc">
+          "Tarik napas perlahan ya sayang... Kamu sudah berjuang sangat hebat hari ini. Istirahatlah sejenak dan jangan merasa harus memikul semuanya sendirian. Ada aku di sini yang selalu siap mendengarkan, memeluk, dan menampung semua lelahmu. 🫂❤️"
+        </p>
+      </div>
+
+      <div class="nav-buttons">
+        <button class="secondary-btn btn-prev">Kembali</button>
+        <button class="primary-btn btn-next">Kirim Pelukan 🫂</button>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         TAHAP 5: DEKAPAN HANGAT & LOVE METER (INTERAKTIF)
+    ======================================================== -->
+    <section class="card step-card" id="step5">
+      <div class="badge">Dekapan Hangat 🫂❤️</div>
+      <h2 class="title">Kirim Pelukan Kasih Sayang</h2>
+      <p class="subtitle mini">Sebuah pelukan hangat untuk meluruhkan segala beban di pundakmu:</p>
+
+      <!-- Love Meter Bar -->
+      <div class="meter-wrapper">
+        <div class="meter-bar" id="meterBar"></div>
+        <span class="meter-label" id="meterLabel">Kasih Sayang: 25%</span>
+      </div>
+
+      <div class="hug-button-container">
+        <button class="hug-heart-btn" id="btnHug">
+          <span class="hug-heart-icon">❤️</span>
+          <span class="hug-text">Kirim Pelukan Erat Untukmu 🫂💖</span>
+        </button>
+      </div>
+
+      <p class="sweet-quote" id="sweetQuote">"Satu pelukan paling hangat khusus untukmu, Princess Hylu... 🫂👑"</p>
+
+      <div class="nav-buttons mt-16">
+        <button class="secondary-btn btn-prev">Kembali</button>
+        <button class="primary-btn btn-next">Janji Tulusku 🤝</button>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         TAHAP 6: JANJI TULUS UNTUK PRINCESS HYLU (PROMISES)
+    ======================================================== -->
+    <section class="card step-card" id="step6">
+      <div class="badge">Komitmen Hati 🤝🌸</div>
+      <h2 class="title">Janji Tulusku Untuk Princess Hylu</h2>
+      <p class="subtitle mini">Bukan sekadar kata-kata manis, melainkan komitmen tulus yang selalu kujaga untukmu:</p>
+
+      <div class="promise-list">
+        <div class="promise-item">
+          <span class="promise-check">✓</span>
+          <div class="promise-content">
+            <strong>Selalu Menjaga & Mendampingi</strong>
+            <p>Aku berjanji akan selalu ada mendampingimu, baik di saat harimu cerah penuh tawa maupun di saat mendung datang menghampiri.</p>
+          </div>
+        </div>
+        <div class="promise-item">
+          <span class="promise-check">✓</span>
+          <div class="promise-content">
+            <strong>Menjadi Pendengar Paling Setia</strong>
+            <p>Aku siap mendengar setiap ceritamu, keluh kesahmu, hingga celoteh kecilmu kapan pun kamu butuh tempat berbagi dan bersandar.</p>
+          </div>
+        </div>
+        <div class="promise-item">
+          <span class="promise-check">✓</span>
+          <div class="promise-content">
+            <strong>Membuatmu Selalu Merasa Dicintai</strong>
+            <p>Aku akan terus berusaha membuatmu tersenyum, merasa dihargai, diprioritaskan, dan dicintai dengan tulus setiap hari.</p>
+          </div>
+        </div>
+        <div class="promise-item">
+          <span class="promise-check">✓</span>
+          <div class="promise-content">
+            <strong>Tumbuh Bersama Menjadi Lebih Baik</strong>
+            <p>Aku akan terus belajar dan berproses agar selalu bisa menjadi pasangan terbaik yang membuatmu bangga dan bahagia bersamaku.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-buttons">
+        <button class="secondary-btn btn-prev">Kembali</button>
+        <button class="primary-btn btn-next">Baca Surat Utuh 📜</button>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         TAHAP 7: SURAT CINTA DARI HATI TERDALAM (THE GRAND LETTER)
+    ======================================================== -->
+    <section class="card step-card" id="step7">
+      <div class="badge">Dari Lubuk Hatiku 📜❤️</div>
+      <h2 class="title letter-title">Sepucuk Surat Untuk Jiwamu</h2>
+
+      <div class="parchment-letter">
+        <div class="parchment-stamp">👑🐮</div>
+        <p class="parchment-salutation">Kepada <strong class="crush-name">PRINCESS HYLU</strong> yang paling kusayangi,</p>
+        <p class="parchment-body">
+          Terima kasih banyak sudah hadir dan melengkapi hidupku. Terima kasih sudah menjadi orang yang selalu kurindukan, kubanggakan, dan kusayangi dengan segenap jiwaku.<br><br>
+          Aku mencintaimu bukan hanya di saat kamu tersenyum bahagia, tapi juga di saat kamu merasa rapuh, lelah, ataupun bimbang. Kamu tidak perlu selalu berpura-pura kuat di hadapanku. Kamu boleh lelah, kamu boleh bersandar, dan kamu akan selalu memiliki tempat paling aman di pelukanku.<br><br>
+          Semoga hari-harimu selalu dikelilingi keberkahan, kesehatan, dan kebahagiaan yang melimpah ruah. Jangan pernah ragu, karena ada aku yang selalu berdiri di sampingmu, menyayangimu tanpa jeda dan tanpa syarat.
+        </p>
+        <div class="parchment-closing">
+          Yang selalu menyayangimu selamanya,<br>
+          <strong class="sender-name">KEBO KESAYANGANNYA HYLU</strong> 🐮❤️
+        </div>
+      </div>
+
+      <div class="nav-buttons mt-16">
+        <button class="secondary-btn btn-prev">Kembali</button>
+        <button class="primary-btn btn-next">Doa & Harapan 🎈</button>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         TAHAP 8: HARAPAN, PERAYAAN & BALASAN KE WHATSAPP (FINAL)
+    ======================================================== -->
+    <section class="card step-card" id="step8">
+      <div class="cute-sticker celebration-sticker">
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Face%20with%20Hearts.png" alt="Love" class="sticker-gif">
+      </div>
+
+      <h1 class="title celebration-title">Peluk Erat Buat Princess Hylu! 👑💖</h1>
+      <p class="celebration-subtitle">Semoga setiap langkah Princess Hylu selalu dipenuhi kebahagiaan dan kehangatan cinta.</p>
+      
+      <div class="wish-box">
+        <div class="wish-item">
+          <span class="wish-icon">☀️</span>
+          <span>Semoga harimu selalu cerah, lancar, dan penuh berkah</span>
+        </div>
+        <div class="wish-item">
+          <span class="wish-icon">🛡️</span>
+          <span>Semoga Princess Hylu selalu dijaga dan dilindungi di mana pun berada</span>
+        </div>
+        <div class="wish-item">
+          <span class="wish-icon">🌸</span>
+          <span>Semoga senyuman manismu tidak pernah pudar sedikit pun</span>
+        </div>
+      </div>
+
+      <div class="action-buttons">
+        <a id="waButton" href="#" target="_blank" class="whatsapp-btn">
+          <span>Kirim Balasan Peluk ke WhatsApp 📲💬</span>
+        </a>
+        <button id="btnReplay" class="replay-btn">
+          <span>Putar Ulang Perjalanan Cinta 🔄</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    Dibuat dengan segenap ketulusan ❤️ oleh <span class="sender-name">KEBO KESAYANGANNYA HYLU</span> khusus untuk <span class="crush-name">PRINCESS HYLU</span> 👑🐮
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
